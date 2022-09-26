@@ -3,13 +3,22 @@
   | Nav
   |============================
 */
+.nav__container {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
 .nav__logo {
-  //   margin-right: 93px;
+  margin-right: 93px;
 
   color: #000;
 }
 .nav__list {
   @extend %list;
+
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 .nav-list__item {
 }

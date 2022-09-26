@@ -16,34 +16,25 @@
 
   text-align: center;
 
-  @media screen and(min-width:480px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   /* outline: 2px solid red; */
 }
 .hero__header {
+  width: 696px;
   display: inline-block;
   margin-bottom: 30px;
 
+  @include fonts(900, 44px, 60px, 0.06em);
   text-align: center;
   text-transform: uppercase;
 
-  @media screen and(min-width:480px) {
-    @include fonts(900, 26px, 42px, 0.06em);
-
-    width: 360px;
-  }
   color: var(--main-white);
 }
 .hero__button {
   display: block;
-
+  padding: 10px 32px;
   margin-right: auto;
   margin-left: auto;
-
-  @media screen and(min-width:480px) {
-    padding: 10px 24px;
-  }
 }
