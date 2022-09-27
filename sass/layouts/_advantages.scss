@@ -21,9 +21,19 @@
 
   @media screen and(min-width:768px) {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   @media screen and(min-width:1200px) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.advantages__item {
+  @media screen and(min-width:768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -39,10 +49,10 @@
   background-color: var(--btn-light);
 
   @media screen and(min-width:768px) {
-    width: 354px;
+    // width: 354px;
   }
   @media screen and(min-width:1200px) {
-    width: 270px;
+    // width: 270px;
   }
 }
 .advantages__title {

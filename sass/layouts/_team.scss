@@ -14,8 +14,7 @@
   background-color: var(--btn-light);
 }
 .team__header {
-  @include fonts(700, 36px, 42px, null);
-
+  @include fonts(700, 28px, 33px, null);
   margin-bottom: 30px;
 
   text-align: center;
@@ -23,6 +22,8 @@
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
+    @include fonts(700, 36px, 42px, null);
+
     margin-bottom: 50px;
   }
 }
@@ -44,6 +45,7 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
@@ -54,6 +56,13 @@
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--main-white);
+
+  @media screen and(min-width:768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and(min-width:1200px) {
+    width: auto;
+  }
 }
 .team__wrapper {
   padding-top: 30px;
