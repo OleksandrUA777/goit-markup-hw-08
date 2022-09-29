@@ -6,8 +6,16 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
+.header__container {
+  display: flex;
+  align-items: center;
+}
 .header__link {
   @extend %link;
+
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   @include fonts(500, 14px, 16px, 0.02em);
 
@@ -18,13 +26,33 @@
     color: var(--main-accent);
   }
 }
+
 .header-contact__group {
   @extend %list;
+
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.header-contact__item {
 }
 .header-contact__mail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   color: var(--main-light);
+
+  margin-right: 50px;
 }
 .header-contact__tel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   color: var(--main-light);
 }
 .header-contact__icon {

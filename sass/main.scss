@@ -9,6 +9,8 @@
 @import './base/container';
 @import './base/cards-set';
 // layout styles
+@import './layouts/header';
+@import './layouts/nav';
 @import './layouts/hero';
 @import './layouts/advantages';
 @import './layouts/team';
@@ -35,4 +37,5 @@
 @import './components/button';
 @import './components/btn';
 @import './components/logo';
+@import './components/menu';
 @import './components/modal';

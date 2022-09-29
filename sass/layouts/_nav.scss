@@ -3,13 +3,30 @@
   | Nav
   |============================
 */
+.nav__container {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
 .nav__logo {
-  //   margin-right: 93px;
+  margin-right: 93px;
 
   color: #000;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+  }
 }
 .nav__list {
   @extend %list;
+
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .nav-list__item {
 }
