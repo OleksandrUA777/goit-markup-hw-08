@@ -1306,6 +1306,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-accent);
 }
+@media screen and (min-width: 321px) {
+  .menu-contact__link--blue {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1.48;
+    letter-spacing: 0.02em;
+  }
+}
 
 .menu-socials__group {
   display: -webkit-box;

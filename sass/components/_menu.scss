@@ -91,6 +91,10 @@
     @include fonts(500, 34px, 40px, 0.02em);
 
     color: var(--main-accent);
+
+    @media screen and (min-width: 321px) {
+      @include fonts(500, 27px, 40px, 0.02em);
+    }
   }
 }
 .menu-socials__group {
