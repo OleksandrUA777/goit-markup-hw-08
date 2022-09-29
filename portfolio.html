@@ -28,10 +28,10 @@
           <a href="./index.html" class="logo nav__logo"><span class="logo__blue">Web</span>Studio</a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link header__link" id="active">Студія</a>
+              <a href="./index.html" class="nav__link header__link nav__link--active" id="active">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link header__link nav__link--active">Портфоліо</a>
+              <a href="./portfolio.html" class="nav__link header__link">Портфоліо</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link header__link">Контакти</a>
@@ -57,6 +57,12 @@
             >
           </li>
         </ul>
+
+        <button class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -85,7 +91,39 @@
             <li class="cards-set__item">
               <a href="" class="cards__link link">
                 <div class="cards__thumb">
-                  <img src="./images/portfolio/laptop.jpg" alt="laptop" class="cards__img" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img1_lg-@1x.webp 1x, ./images/portfolio/img1_lg-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img1_lg-@1x.jpg 1x, ./images/portfolio/img1_lg-@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img1_md-@1x.webp 1x, ./images/portfolio/img1_md-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img1_md-@1x.jpg 1x, ./images/portfolio/img1_md-@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img1_sm-@1x.webp 1x, ./images/portfolio/img1_sm-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img1_sm-@1x.jpg 1x, ./images/portfolio/img1_sm-@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/img1_sm-@1x.jpg" alt="laptop" class="cards__img" />
+                  </picture>
                   <div class="cards__overlay">
                     <p class="cards__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -102,7 +140,39 @@
             <li class="cards-set__item">
               <a href="" class="cards__link link">
                 <div class="cards__thumb">
-                  <img src="./images/portfolio/basketball.jpg" alt="laptop" class="cards__img" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img2_lg-@1x.webp 1x, ./images/portfolio/img2_lg-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img2_lg-@1x.jpg 1x, ./images/portfolio/img2_lg-@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img2_md-@1x.webp 1x, ./images/portfolio/img2_md-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img2_md-@1x.jpg 1x, ./images/portfolio/img2_md-@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img2_sm-@1x.webp 1x, ./images/portfolio/img2_sm-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img2_sm-@1x.jpg 1x, ./images/portfolio/img2_sm-@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/img2_sm-@1x.jpg" alt="laptop" class="cards__img" />
+                  </picture>
                   <div class="cards__overlay">
                     <p class="cards__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -119,7 +189,39 @@
             <li class="cards-set__item">
               <a href="" class="cards__link link">
                 <div class="cards__thumb">
-                  <img src="./images/portfolio/seefood.jpg" alt="laptop" class="cards__img" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img3_lg-@1x.webp 1x, ./images/portfolio/img3_lg-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img3_lg-@1x.jpg 1x, ./images/portfolio/img3_lg-@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img3_md-@1x.webp 1x, ./images/portfolio/img3_md-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img3_md-@1x.jpg 1x, ./images/portfolio/img3_md-@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img3_sm-@1x.webp 1x, ./images/portfolio/img3_sm-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img3_sm-@1x.jpg 1x, ./images/portfolio/img3_sm-@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/img3_sm-@1x.jpg" alt="laptop" class="cards__img" />
+                  </picture>
                   <div class="cards__overlay">
                     <p class="cards__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -136,7 +238,39 @@
             <li class="cards-set__item">
               <a href="" class="cards__link link">
                 <div class="cards__thumb">
-                  <img src="./images/portfolio/headphones.jpg" alt="laptop" class="cards__img" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img4_lg-@1x.webp 1x, ./images/portfolio/img4_lg-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img4_lg-@1x.jpg 1x, ./images/portfolio/img4_lg-@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img4_md-@1x.webp 1x, ./images/portfolio/img4_md-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img4_md-@1x.jpg 1x, ./images/portfolio/img4_md-@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img4_sm-@1x.webp 1x, ./images/portfolio/img4_sm-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img4_sm-@1x.jpg 1x, ./images/portfolio/img4_sm-@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/img4_sm-@1x.jpg" alt="laptop" class="cards__img" />
+                  </picture>
                   <div class="cards__overlay">
                     <p class="cards__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -153,7 +287,39 @@
             <li class="cards-set__item">
               <a href="" class="cards__link link">
                 <div class="cards__thumb">
-                  <img src="./images/portfolio/box.jpg" alt="laptop" class="cards__img" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img5_lg-@1x.webp 1x, ./images/portfolio/img5_lg-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img5_lg-@1x.jpg 1x, ./images/portfolio/img5_lg-@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img5_md-@1x.webp 1x, ./images/portfolio/img5_md-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img5_md-@1x.jpg 1x, ./images/portfolio/img5_md-@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img5_sm-@1x.webp 1x, ./images/portfolio/img5_sm-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img5_sm-@1x.jpg 1x, ./images/portfolio/img5_sm-@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/img5_sm-@1x.jpg" alt="laptop" class="cards__img" />
+                  </picture>
                   <div class="cards__overlay">
                     <p class="cards__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -170,7 +336,39 @@
             <li class="cards-set__item">
               <a href="" class="cards__link link">
                 <div class="cards__thumb">
-                  <img src="./images/portfolio/monitor.jpg" alt="laptop" class="cards__img" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img6_lg-@1x.webp 1x, ./images/portfolio/img6_lg-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img6_lg-@1x.jpg 1x, ./images/portfolio/img6_lg-@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img6_md-@1x.webp 1x, ./images/portfolio/img6_md-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img6_md-@1x.jpg 1x, ./images/portfolio/img6_md-@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img6_sm-@1x.webp 1x, ./images/portfolio/img6_sm-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img6_sm-@1x.jpg 1x, ./images/portfolio/img6_sm-@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/img6_sm-@1x.jpg" alt="laptop" class="cards__img" />
+                  </picture>
                   <div class="cards__overlay">
                     <p class="cards__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -187,7 +385,39 @@
             <li class="cards-set__item">
               <a href="" class="cards__link link">
                 <div class="cards__thumb">
-                  <img src="./images/portfolio/book.jpg" alt="laptop" class="cards__img" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img7_lg-@1x.webp 1x, ./images/portfolio/img7_lg-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img7_lg-@1x.jpg 1x, ./images/portfolio/img7_lg-@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img7_md-@1x.webp 1x, ./images/portfolio/img7_md-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img7_md-@1x.jpg 1x, ./images/portfolio/img7_md-@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img7_sm-@1x.webp 1x, ./images/portfolio/img7_sm-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img7_sm-@1x.jpg 1x, ./images/portfolio/img7_sm-@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/img7_sm-@1x.jpg" alt="laptop" class="cards__img" />
+                  </picture>
                   <div class="cards__overlay">
                     <p class="cards__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -204,7 +434,39 @@
             <li class="cards-set__item">
               <a href="" class="cards__link link">
                 <div class="cards__thumb">
-                  <img src="./images/portfolio/tag.jpg" alt="laptop" class="cards__img" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img8_lg-@1x.webp 1x, ./images/portfolio/img8_lg-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img8_lg-@1x.jpg 1x, ./images/portfolio/img8_lg-@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img8_md-@1x.webp 1x, ./images/portfolio/img8_md-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img8_md-@1x.jpg 1x, ./images/portfolio/img8_md-@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img8_sm-@1x.webp 1x, ./images/portfolio/img8_sm-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img8_sm-@1x.jpg 1x, ./images/portfolio/img8_sm-@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/img8_sm-@1x.jpg" alt="laptop" class="cards__img" />
+                  </picture>
                   <div class="cards__overlay">
                     <p class="cards__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -221,7 +483,39 @@
             <li class="cards-set__item">
               <a href="" class="cards__link link">
                 <div class="cards__thumb">
-                  <img src="./images/portfolio/mackbook.jpg" alt="laptop" class="cards__img" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img9_lg-@1x.webp 1x, ./images/portfolio/img9_lg-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img9_lg-@1x.jpg 1x, ./images/portfolio/img9_lg-@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img9_md-@1x.webp 1x, ./images/portfolio/img9_md-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/img9_md-@1x.jpg 1x, ./images/portfolio/img9_md-@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img9_sm-@1x.webp 1x, ./images/portfolio/img9_sm-@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/img9_sm-@1x.jpg 1x, ./images/portfolio/img9_sm-@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/mackbook.jpg" alt="laptop" class="cards__img" />
+                  </picture>
                   <div class="cards__overlay">
                     <p class="cards__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить

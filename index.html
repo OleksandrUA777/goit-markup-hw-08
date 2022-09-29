@@ -130,15 +130,30 @@
           <h2 class="work__header">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img src="./images/work/img1.jpg" alt="чоловік друкує на клавіатурі" width="370" class="work__img" />
+              <img
+                srcset="./images/work/img1_lg-@1x.jpg 1x, images/work/img1_lg-@2x.jpg 2x"
+                src="./images/work/img1_lg-@1x.jpg"
+                alt="чоловік друкує на клавіатурі"
+                class="work__img"
+              />
               <p class="work__text">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <img src="./images/work/img2.jpg" alt="ноутбук" width="370" class="work__img" />
+              <img
+                srcset="./images/work/img2_lg-@1x.jpg 1x, images/work/img2_lg-@2x.jpg 2x"
+                src="./images/work/img2_lg-@1x.jpg"
+                alt="ноутбук"
+                class="work__img"
+              />
               <p class="work__text">Мобільні додатки</p>
             </li>
             <li class="work__item">
-              <img src="./images/work/img3.jpg" alt="планшет" width="370" class="work__img" />
+              <img
+                srcset="./images/work/img3_lg-@1x.jpg 1x, images/work/img3_lg-@2x.jpg 2x"
+                src="./images/work/img3_lg-@1x.jpg"
+                alt="планшет"
+                class="work__img"
+              />
               <p class="work__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -150,7 +165,39 @@
           <h2 class="team__header">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/team/man-1.jpg" alt="чоловік з бородою" class="team__img" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img1_lg-@1x.webp 1x, ./images/team/img1_lg-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img1_lg-@1x.jpg 1x, ./images/team/img1_lg-@2x.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img1_md-@1x.webp 1x, ./images/team/img1_md-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img1_md-@1x.jpg 1x, ./images/team/img1_md-@2x.jpg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img1_sm-@1x.webp 1x, ./images/team/img1_sm-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img1_sm-@1x.jpg 1x, ./images/team/img1_sm-@2x.jpg 2x"
+                />
+                <img src="./images/team/img1_sm-@1x.jpg" alt="чоловік з бородою" class="team__img" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__description">Product Designer</p>
@@ -211,7 +258,39 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team/woman.jpg" alt="жінка зі світлим волоссям" class="team__img" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img2_lg-@1x.webp 1x, ./images/team/img2_lg-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img2_lg-@1x.jpg 1x, ./images/team/img2_lg-@2x.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img2_md-@1x.webp 1x, ./images/team/img2_md-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img2_md-@1x.jpg 1x, ./images/team/img2_md-@2x.jpg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img2_sm-@1x.webp 1x, ./images/team/img2_sm-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img2_sm-@1x.jpg 1x, ./images/team/img2_sm-@2x.jpg 2x"
+                />
+                <img src="./images/team/img2_sm-@1x.jpg" alt="жінка зі світлим волоссям" class="team__img" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__description">Frontend Developer</p>
@@ -272,7 +351,39 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team/man-2.jpg" alt="посміхаючий чоловік у синій сорочці" class="team__img" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img3_lg-@1x.webp 1x, ./images/team/img3_lg-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img3_lg-@1x.jpg 1x, ./images/team/img3_lg-@2x.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img3_md-@1x.webp 1x, ./images/team/img3_md-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img3_md-@1x.jpg 1x, ./images/team/img3_md-@2x.jpg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img3_sm-@1x.webp 1x, ./images/team/img3_sm-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img3_sm-@1x.jpg 1x, ./images/team/img3_sm-@2x.jpg 2x"
+                />
+                <img src="./images/team/img3_sm-@1x.jpg" alt="посміхаючий чоловік у синій сорочці" class="team__img" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__description">Marketing</p>
@@ -333,7 +444,39 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team/man-3.jpg" alt="посміхаючий чоловік в окулярах" class="team__img" />
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img4_lg-@1x.webp 1x, ./images/team/img4_lg-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img4_lg-@1x.jpg 1x, ./images/team/img4_lg-@2x.jpg 2x"
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img4_md-@1x.webp 1x, ./images/team/img4_md-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img4_md-@1x.jpg 1x, ./images/team/img4_md-@2x.jpg 2x"
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img4_sm-@1x.webp 1x, ./images/team/img4_sm-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img4_sm-@1x.jpg 1x, ./images/team/img4_sm-@2x.jpg 2x"
+                />
+                <img src="./images/team/img4_sm-@1x.jpg" alt="посміхаючий чоловік в окулярах" class="team__img" />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__description">UI Designer</p>
@@ -613,8 +756,8 @@
       </button>
 
       <ul class="menu__nav">
-        <li class="menu-nav__item"><a href="" class="menu-nav__link">Студія</a></li>
-        <li class="menu-nav__item"><a href="" class="menu-nav__link">Портфоліо</a></li>
+        <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link">Студія</a></li>
+        <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link">Портфоліо</a></li>
         <li class="menu-nav__item"><a href="" class="menu-nav__link">Контакти</a></li>
       </ul>
 
