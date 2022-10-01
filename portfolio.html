@@ -11,15 +11,9 @@
     <title>Portfolio</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/fonts.css" />
     <!-- Normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
+    <link rel="stylesheet" href="./sass/utils/normalize.scss" />
     <!-- Custom style -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -31,10 +25,10 @@
           <a href="./index.html" class="logo nav__logo"><span class="logo__blue">Web</span>Studio</a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link header__link nav__link--active" id="active">Студія</a>
+              <a href="./index.html" class="nav__link header__link" id="active">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link header__link">Портфоліо</a>
+              <a href="./portfolio.html" class="nav__link header__link nav__link--active">Портфоліо</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link header__link">Контакти</a>
@@ -61,7 +55,12 @@
           </li>
         </ul>
 
-        <button class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button
+          class="menu__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="three stripes to open mobile menu"
+        >
           <svg width="40" height="40">
             <use href="./images/icons.svg#menu"></use>
           </svg>
