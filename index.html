@@ -10,9 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">WebStudio</title>
     <!-- Fonts -->
-    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Normalize -->
-    <link rel="stylesheet" href="./sass/utils/normalize.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -131,36 +138,30 @@
           <h2 class="work__header">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <picture>
-                <source
-                  srcset="./images/work/img1_lg-@1x.webp 1x, ./images/work/img1_lg-@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source srcset="./images/work/img1_lg-@1x.jpg 1x, images/work/img1_lg-@2x.jpg 2x" />
-                <img src="./images/work/img1_lg-@1x.jpg" alt="чоловік друкує на клавіатурі" class="work__img" />
-              </picture>
+              <img
+                srcset="./images/work/img1_lg-@1x.jpg 1x, images/work/img1_lg-@2x.jpg 2x"
+                src="./images/work/img1_lg-@1x.jpg"
+                alt="чоловік друкує на клавіатурі"
+                class="work__img"
+              />
               <p class="work__text">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <picture>
-                <source
-                  srcset="./images/work/img2_lg-@1x.webp 1x, ./images/work/img2_lg-@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source srcset="./images/work/img2_lg-@1x.jpg 1x, images/work/img2_lg-@2x.jpg 2x" />
-                <img src="./images/work/img2_lg-@1x.jpg" alt="ноутбук" class="work__img" />
-              </picture>
+              <img
+                srcset="./images/work/img2_lg-@1x.jpg 1x, images/work/img2_lg-@2x.jpg 2x"
+                src="./images/work/img2_lg-@1x.jpg"
+                alt="ноутбук"
+                class="work__img"
+              />
               <p class="work__text">Мобільні додатки</p>
             </li>
             <li class="work__item">
-              <picture>
-                <source
-                  srcset="./images/work/img3_lg-@1x.webp 1x, ./images/work/img3_lg-@2x.webp 2x"
-                  type="image/webp"
-                />
-                <source srcset="./images/work/img3_lg-@1x.jpg 1x, images/work/img3_lg-@2x.jpg 2x" />
-                <img src="./images/work/img3_lg-@1x.jpg" alt="планшет" class="work__img" />
-              </picture>
+              <img
+                srcset="./images/work/img3_lg-@1x.jpg 1x, images/work/img3_lg-@2x.jpg 2x"
+                src="./images/work/img3_lg-@1x.jpg"
+                alt="планшет"
+                class="work__img"
+              />
               <p class="work__text">Дизайнерські рішення</p>
             </li>
           </ul>
